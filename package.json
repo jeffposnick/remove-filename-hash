@@ -1,0 +1,43 @@
+{
+  "author": "Jeff Posnick <github@posnick.org>",
+  "bugs": {
+    "url": "https://github.com/jeffposnick/undo-filename-hash/issues"
+  },
+  "description": "Swaps the substring of a filename or URL that contains a hash with a replacement string.",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "exports": {
+    "default": "./dist/index.modern.js",
+    "require": "./dist/index.cjs"
+  },
+  "homepage": "https://github.com/jeffposnick/undo-filename-hash#readme",
+  "keywords": [
+    "hash",
+    "content hash",
+    "asset hash"
+  ],
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "name": "undo-filename-hash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffposnick/undo-filename-hash.git"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "npm run test"
+  },
+  "source": "./index.ts",
+  "type": "module",
+  "unpkg": "./dist/index.umd.js",
+  "version": "0.0.1",
+  "volta": {
+    "node": "16.16.0"
+  }
+}
