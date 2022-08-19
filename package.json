@@ -5,7 +5,8 @@
   },
   "description": "Swaps the substring of a filename or URL that contains a hash with a replacement string.",
   "devDependencies": {
-    "microbundle": "^0.15.1"
+    "microbundle": "^0.15.1",
+    "vitest": "^0.21.1"
   },
   "engines": {
     "node": ">=16"
@@ -16,27 +17,38 @@
   },
   "homepage": "https://github.com/jeffposnick/undo-filename-hash#readme",
   "keywords": [
-    "hash",
+    "asset hash",
     "content hash",
-    "asset hash"
+    "hash"
   ],
   "license": "MIT",
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
-  "name": "undo-filename-hash",
+  "name": "remove-filename-hash",
+  "prettier": {
+    "arrowParens": "always",
+    "bracketSpacing": false,
+    "printWidth": 100,
+    "quoteProps": "consistent",
+    "useTabs": true,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeffposnick/undo-filename-hash.git"
+    "url": "git+https://github.com/jeffposnick/remove-filename-hash.git"
   },
   "scripts": {
     "build": "microbundle",
+    "coverage": "vitest run --coverage",
     "dev": "microbundle watch",
-    "test": "npm run test"
+    "test": "vitest"
   },
   "source": "./index.ts",
   "type": "module",
   "unpkg": "./dist/index.umd.js",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "volta": {
     "node": "16.16.0"
   }
