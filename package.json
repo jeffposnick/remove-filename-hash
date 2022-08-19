@@ -1,7 +1,7 @@
 {
   "author": "Jeff Posnick <github@posnick.org>",
   "bugs": {
-    "url": "https://github.com/jeffposnick/undo-filename-hash/issues"
+    "url": "https://github.com/jeffposnick/remove-filename-hash/issues"
   },
   "description": "Swaps the substring of a filename or URL that contains a hash with a replacement string.",
   "devDependencies": {
@@ -15,7 +15,7 @@
     "default": "./dist/index.modern.js",
     "require": "./dist/index.cjs"
   },
-  "homepage": "https://github.com/jeffposnick/undo-filename-hash#readme",
+  "homepage": "https://github.com/jeffposnick/remove-filename-hash#readme",
   "keywords": [
     "asset hash",
     "content hash",
