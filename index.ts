@@ -17,7 +17,6 @@ declare global {
 
 // See https://stackoverflow.com/a/3561711/385997
 function escapeRegExp(str: string): string {
-	// test
 	return str.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
 }
 
