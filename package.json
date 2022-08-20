@@ -42,8 +42,10 @@
   "scripts": {
     "build": "microbundle",
     "coverage": "vitest run --coverage",
-    "dev": "microbundle watch",
-    "test": "vitest"
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish",
+    "preversion": "npm test",
+    "test": "vitest run"
   },
   "source": "./index.ts",
   "type": "module",
