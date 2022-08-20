@@ -15,6 +15,9 @@
     "default": "./dist/index.modern.js",
     "require": "./dist/index.cjs"
   },
+  "files": [
+    "./dist/**/*"
+  ],
   "homepage": "https://github.com/jeffposnick/remove-filename-hash#readme",
   "keywords": [
     "asset hash",
@@ -44,7 +47,7 @@
     "coverage": "vitest run --coverage",
     "postpublish": "git push origin --all; git push origin --tags",
     "postversion": "npm publish",
-    "preversion": "npm test",
+    "preversion": "npm test && npm run build",
     "test": "vitest run"
   },
   "source": "./index.ts",
