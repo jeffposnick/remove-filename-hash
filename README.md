@@ -20,9 +20,10 @@ like `[hash]`.
 One motivating use case involves performing
 [runtime comparisons](https://jeffy.info/2021/10/10/smart-caching-hashes.html) of two URLs inside of
 a service worker, to see if they represent different versions of the same underlying assets.
-Another, less esoteric use case, has to do with writing integration tests for web apps that need to
-interrogate cache state. Direct string comparisons of the set of cached URLs against a known-good
-set won't work unless the URLs can first be normalized, to remove hashes.
+Another, less esoteric use case, has to do with writing
+[integration tests](https://github.com/jeffposnick/yt-playlist-notifier/blob/add56f0b9c9d237a57b0d9126dd7b250ddefd910/tests/sw.spec.ts)
+for web apps that need to interrogate cache state. Direct string comparisons of the set of cached
+URLs against a known-good set won't work unless the URLs can first be normalized, to remove hashes.
 
 ## Installation
 
