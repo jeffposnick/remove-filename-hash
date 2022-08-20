@@ -54,7 +54,7 @@
   "source": "./index.ts",
   "type": "module",
   "unpkg": "./dist/index.umd.js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "volta": {
     "node": "16.16.0"
   }
