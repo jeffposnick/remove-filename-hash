@@ -5,8 +5,10 @@
 	},
 	"description": "Swaps the substring of a filename or URL that contains a hash with a replacement string.",
 	"devDependencies": {
+		"husky": "^8.0.0",
 		"microbundle": "^0.15.1",
 		"prettier": "^2.7.1",
+		"pretty-quick": "^3.1.3",
 		"vitest": "^0.21.1"
 	},
 	"engines": {
@@ -52,7 +54,8 @@
 		"postpublish": "git push origin --all; git push origin --tags",
 		"postversion": "npm publish",
 		"preversion": "npm test && npm run build",
-		"test": "vitest run"
+		"test": "vitest run",
+		"prepare": "husky install"
 	},
 	"source": "./index.ts",
 	"type": "module",
