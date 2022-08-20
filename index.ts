@@ -45,7 +45,10 @@ export function createRegExp({
 	before: string;
 	after: string;
 }): RegExp {
-	return new RegExp(`${escapeRegExp(before)}(${characters}{${size}})${escapeRegExp(after)}`, 'd');
+	return new RegExp(
+		`${escapeRegExp(before)}(${characters}{${size}})${escapeRegExp(after)}`,
+		'd',
+	);
 }
 
 export function removeHash({
@@ -78,7 +81,11 @@ export function removeHash({
 			}
 
 			const [start, end] = result.indices[1];
-			return stringWithHash.substring(0, start) + replacement + stringWithHash.substring(end);
+			return (
+				stringWithHash.substring(0, start) +
+				replacement +
+				stringWithHash.substring(end)
+			);
 		}
 	}
 

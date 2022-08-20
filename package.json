@@ -1,63 +1,65 @@
 {
-  "author": "Jeff Posnick <github@posnick.org>",
-  "bugs": {
-    "url": "https://github.com/jeffposnick/remove-filename-hash/issues"
-  },
-  "description": "Swaps the substring of a filename or URL that contains a hash with a replacement string.",
-  "devDependencies": {
-    "microbundle": "^0.15.1",
-    "vitest": "^0.21.1"
-  },
-  "engines": {
-    "node": ">=16"
-  },
-  "exports": {
-    "default": "./dist/index.modern.js",
-    "require": "./dist/index.cjs",
-    "types": "./dist/index.d.ts"
-  },
-  "files": [
-    "./dist/**/*",
-    "./index.ts"
-  ],
-  "homepage": "https://github.com/jeffposnick/remove-filename-hash#readme",
-  "keywords": [
-    "asset hash",
-    "content hash",
-    "hash"
-  ],
-  "license": "MIT",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.module.js",
-  "name": "remove-filename-hash",
-  "prettier": {
-    "arrowParens": "always",
-    "bracketSpacing": false,
-    "printWidth": 100,
-    "quoteProps": "consistent",
-    "useTabs": true,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jeffposnick/remove-filename-hash.git"
-  },
-  "scripts": {
-    "build": "microbundle",
-    "coverage": "vitest run --coverage",
-    "postpublish": "git push origin --all; git push origin --tags",
-    "postversion": "npm publish",
-    "preversion": "npm test && npm run build",
-    "test": "vitest run"
-  },
-  "source": "./index.ts",
-  "type": "module",
-  "types": "./dist/index.d.ts",
-  "unpkg": "./dist/index.umd.js",
-  "version": "0.0.7",
-  "volta": {
-    "node": "16.16.0"
-  }
+	"author": "Jeff Posnick <github@posnick.org>",
+	"bugs": {
+		"url": "https://github.com/jeffposnick/remove-filename-hash/issues"
+	},
+	"description": "Swaps the substring of a filename or URL that contains a hash with a replacement string.",
+	"devDependencies": {
+		"microbundle": "^0.15.1",
+		"prettier": "^2.7.1",
+		"vitest": "^0.21.1"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"exports": {
+		"default": "./dist/index.modern.js",
+		"require": "./dist/index.cjs",
+		"types": "./dist/index.d.ts"
+	},
+	"files": [
+		"./dist/**/*",
+		"./index.ts"
+	],
+	"homepage": "https://github.com/jeffposnick/remove-filename-hash#readme",
+	"keywords": [
+		"asset hash",
+		"content hash",
+		"hash"
+	],
+	"license": "MIT",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.module.js",
+	"name": "remove-filename-hash",
+	"prettier": {
+		"arrowParens": "always",
+		"bracketSpacing": false,
+		"printWidth": 80,
+		"quoteProps": "consistent",
+		"useTabs": true,
+		"semi": true,
+		"singleQuote": true,
+		"trailingComma": "all"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jeffposnick/remove-filename-hash.git"
+	},
+	"scripts": {
+		"build": "microbundle",
+		"coverage": "vitest run --coverage",
+		"prettier": "npx prettier --write .",
+		"postpublish": "git push origin --all; git push origin --tags",
+		"postversion": "npm publish",
+		"preversion": "npm test && npm run build",
+		"test": "vitest run"
+	},
+	"source": "./index.ts",
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"unpkg": "./dist/index.umd.js",
+	"version": "0.0.7",
+	"volta": {
+		"node": "16.16.0"
+	}
 }

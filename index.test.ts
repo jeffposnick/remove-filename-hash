@@ -6,7 +6,12 @@ test('should work when a single pattern is provided, not in an array', () => {
 	const replaced = removeHash({
 		stringWithHash: 'http://localhost:3000/main.abcd1234.js',
 		replacement: '[hash]',
-		regexps: createRegExp({characters: HEX_CHARACTER_CLASS, size: 8, before: '.', after: '.'}),
+		regexps: createRegExp({
+			characters: HEX_CHARACTER_CLASS,
+			size: 8,
+			before: '.',
+			after: '.',
+		}),
 	});
 
 	expect(replaced).toBe('http://localhost:3000/main.[hash].js');
@@ -16,7 +21,14 @@ test('should work when a single pattern is provided in an array', () => {
 	const replaced = removeHash({
 		stringWithHash: 'http://localhost:3000/main.abcd1234.js',
 		replacement: '[hash]',
-		regexps: [createRegExp({characters: HEX_CHARACTER_CLASS, size: 8, before: '.', after: '.'})],
+		regexps: [
+			createRegExp({
+				characters: HEX_CHARACTER_CLASS,
+				size: 8,
+				before: '.',
+				after: '.',
+			}),
+		],
 	});
 
 	expect(replaced).toBe('http://localhost:3000/main.[hash].js');
@@ -28,7 +40,12 @@ test('should work when multiple patterns are provided', () => {
 		replacement: '[hash]',
 		regexps: [
 			new RegExp('WILL_NOT_MATCH', 'd'),
-			createRegExp({characters: HEX_CHARACTER_CLASS, size: 8, before: '.', after: '.'}),
+			createRegExp({
+				characters: HEX_CHARACTER_CLASS,
+				size: 8,
+				before: '.',
+				after: '.',
+			}),
 		],
 	});
 

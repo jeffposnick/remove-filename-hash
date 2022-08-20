@@ -1,7 +1,7 @@
 {
-  "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "target": "ESNext"
-  }
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"target": "ESNext"
+	}
 }
