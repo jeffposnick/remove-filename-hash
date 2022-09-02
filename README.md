@@ -1,5 +1,11 @@
 # remove-filename-hash
 
+## Installation
+
+```sh
+$ npm install remove-filename-hash
+```
+
 ## Background
 
 [Hashed URLs](https://bundlers.tooling.report/hashing/) and filenames are
@@ -29,12 +35,6 @@ do with writing
 for web apps that need to interrogate cache state. Direct string comparisons of
 the set of cached URLs against a known-good set won't work unless the URLs can
 first be normalized, to remove hashes.
-
-## Installation
-
-```sh
-$ npm install remove-filename-hash
-```
 
 ## Usage
 
