@@ -61,7 +61,7 @@
 	"type": "module",
 	"types": "./dist/index.d.ts",
 	"unpkg": "./dist/index.umd.js",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"volta": {
 		"node": "16.16.0"
 	}
